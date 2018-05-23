@@ -1,0 +1,241 @@
+html,body{
+  z-index:0;
+  margin:0px;
+  padding:0px;
+  background: url(https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+li{
+  list-style:none;
+}
+a{
+  color:white;
+  text-decoration:none;
+}
+p,h6,h5,h4,h3,h2,h1{
+  color:black;
+}
+textarea{
+    resize:none;
+}
+
+#header{
+  z-index:101;
+  width:90%;
+  height:40px;
+  text-align:right;
+  padding:10px 5% 0px 5%;
+  background-color:#58D68D;
+  position:fixed;
+}
+.menu-link{
+  font-size:30px;
+  display:inline;
+  padding:0px 20px 0px 20px;
+}
+.menu-link:hover a{
+  text-decoration:underline;
+}
+
+.page-div{
+  width:100%;
+  min-height:100vh;
+  margin:0 auto;
+  text-align:center;
+  position:relative;
+}
+
+#profile-div{
+  z-index:1;
+  background-color:white;
+}
+#profile-img{
+  width:250px;
+  height:auto;
+  margin-top:10%;
+  border-radius:50%;
+  border:2px solid #58D68D;
+}
+#profile-h1{
+  color:#58D68D;
+  padding:10px;
+}
+.profile-icon{
+  width:75px;
+  height:75px;
+  margin:0px 25px;
+  border-radius:50%;
+  border:1px solid white;
+}
+.profile-icon:hover{
+  border:1px solid #58D68D;
+}
+
+#quote-div{
+  z-index:21;
+  background: rgba(255,255,255,0);
+}
+#quote-border{
+  z-index:22;
+  top:50%;
+  left:50%;
+  height:250px;
+  width:400px;
+  margin:-150px 0 0 -250px;
+  padding:25px 50px;
+  border-radius:10px;
+  border:1px solid black;
+  background:rgba(255,255,255,1);
+  box-shadow:-5px 10px 10px black;
+  cursor:pointer;
+  position:absolute;
+}
+#quote-text{
+  top:25%;
+  font-size:24px;
+  vertical-align:middle;
+  cursor:pointer;
+  position:relative;
+}
+
+#about-div{
+  z-index:41;
+  background:rgba(255,255,255,0.5);
+}
+#about-container{
+  left:50%;
+  width:900px;
+  margin:50px 0 0 -450px;
+  padding-bottom:50px;
+  position:absolute;
+  background-image:url(http://www.designbolts.com/wp-content/uploads/2012/12/White-Paper-Seamless-Pattern-For-Website-Background.jpg);
+}
+.about-section{
+  color:#228B22;
+  text-align:left;
+  padding:10px 50px;
+}
+
+#projects-div{
+  z-index:61;
+  background:rgba(88,212,141,1);
+}
+#projects-container{
+  z-index:62;
+  left:50%;
+  width:1000px;
+  margin:50px 0 0 -500px;
+  padding-bottom:50px;
+  position:absolute;
+}
+#projects-container-iframe{
+  z-index:65;
+  float:left;
+  width:280px;
+  height:280px;
+  margin:26px;
+  display:inline-block;
+  background:rgba(255,255,255,0.5);
+  cursor:pointer;
+}
+.project-iframe iframe {
+  z-index:63;
+  width:1120px;
+  height:1120px;
+  overflow:hidden;
+  pointer-events:none;
+}
+.project-iframe{
+  z-index:64;
+  -ms-zoom: 0.25;
+  -moz-transform: scale(0.25);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.25);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+  pointer-events:none;
+}
+
+#contact-div{
+  z-index:81;
+  background: #58D68D;
+  background: -webkit-linear-gradient(top, rgba(88,212,141,1), rgba(23,16,54,1)); 
+  background: -o-linear-gradient(bottom, rgba(88,212,141,1), rgba(23,16,54,1)); 
+  background: -moz-linear-gradient(bottom, rgba(88,212,141,1), rgba(23,16,54,1));
+  background: linear-gradient(to bottom, rgba(88,212,141,1), rgba(23,16,54,1)); 
+}
+#contact-container{
+  padding-top:300px;
+}
+#contact-icon{
+  color:white;
+  cursor:pointer;
+}
+#contact-notice{
+  color:white;
+  font-size:20px;
+  display:none;
+}
+
+#contact-cover{
+  top:0px;
+  left:0px;
+  z-index:121;
+  width:100%;
+  height:100vh;
+  display:none;
+  background:rgba(0,0,0,0.5);
+  position:fixed;
+}
+#contact-div-form{
+  top:50%;
+  left:50%;
+  z-index:141;
+  width:500px;
+  height:450px;
+  display:none;
+  margin:-250px 0 0 -250px;
+  padding:25px 0px 25px 0px;
+  text-align:center;
+  border-radius:5px;
+  border:1px solid #58D68D;
+  background-color:white;
+  position:fixed;
+}
+#contact-close{
+  color:#58D68D;
+  float:right;
+  padding:0px 25px;
+  cursor:pointer;
+}
+#contact-form{
+  margin-top:60px;
+}
+.field-text, .field-textarea{
+  width:350px;
+  font-size:16px;
+  padding:5px 10px;
+  margin:10px 50px;
+  border:1px solid #58D68D;
+}
+.field-textarea{
+  height:100px;
+}
+.field-submit{
+  clear:both;
+  width:100px;
+  padding:10px;
+  color:white;
+  font-size:16px;
+  border:1px solid #58D68D;
+  background-color:#58D68D;
+  cursor:pointer;
+}
+.field-submit:hover{
+  color:#58D68D;
+  background-color:white;
+}
