@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Words of Wisdom</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <form id='temperature'>
+      <input type='radio' name='temperature' onclick='toCelsius()' value='celsius'> Celsius
+      <input type='radio' name='temperature' onclick='toFahrenheit()' value='fahrenheit' checked='checked'> Fahrenheit 
+    </form>
+
+    <div id='weatherContainer'>
+      <div id='weatherContainerInfo'>
+        <img class='weatherInfo' id='icon' src=''>
+        <p class='weatherInfo' id='name'></p>
+      </div>
+
+      <div id='weatherContainerTemp'>
+        <table>
+          <tr id='tempValues'>
+            <td id='tempValueMin'></td>
+            <td id='tempValueCurrent'></td>
+            <td id='tempValueMax'></td>
+          </tr>
+          <tr id='tempNames'>
+            <td>min</td>
+            <td id='tempNameCurrent'>current</td>
+            <td>max</td>
+          </tr>
+        </table>
+      </div>
+
+      <p id='description'></p>
+    </div>
+
+    <p id="source">
+      <i class="fa fa-info-circle"></i>
+      <i> Image from Pexels; Icons from Font Awesome</i>
+    </p>
+  </body>
+</html>
