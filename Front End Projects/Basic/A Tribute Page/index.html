@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alan Turing Tribute Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class='main'>
+      <div class='fixed padded black-box-shadow' id='guide'>
+        <a class='goto blocked' href='#portrait'>Portrait</a>
+        <a class='goto blocked ' href='#1912'>1912</a>
+        <a class='goto blocked' href='#1918'>1918</a>
+        <a class='goto blocked' href='#1922'>1922</a>
+        <a class='goto blocked' href='#1926'>1926</a>
+        <a class='goto blocked' href='#1928'>1928</a>
+        <a class='goto blocked' href='#1930'>1930</a>
+        <a class='goto blocked' href='#1931'>1931</a>
+        <a class='goto blocked' href='#1935'>1935</a>
+        <a class='goto blocked' href='#1936'>1936</a>
+        <a class='goto blocked' href='#1938'>1938</a>
+        <a class='goto blocked' href='#1939'>1939</a>
+        <a class='goto blocked' href='#1942'>1942</a>
+        <a class='goto blocked' href='#1943'>1943</a>
+        <a class='goto blocked' href='#1945'>1945</a>
+        <a class='goto blocked' href='#1946'>1946</a>
+        <a class='goto blocked' href='#1950'>1950</a>
+        <a class='goto blocked' href='#1951'>1951</a>
+        <a class='goto blocked' href='#1952'>1952</a>
+        <a class='goto blocked' href='#1954'>1954</a>
+      </div>
+
+      <div class='right padded black-box-shadow opacify' id='content'>
+        <h1 class='mouse-pt'><a class='external' target="_blank" href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing (1912 - 1954)</a></h1>
+        <img class='black-box-shadow portrait' id='portrait' src='https://www.biography.com/.image/t_share/MTE5NDg0MDU1MTUzMTE2Njg3/alan-turing-9512017-1-402.jpg'/>
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1912' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1912</h4>
+            <p class='inline no-space'>Alan Turing is born in Maida Vale, London.</p>
+          </div>
+          <p class='details hidden no-space' id='1912-details'>When Alan was born, his father, Julius Mathison Turing was on leave from his position with the Indian Civil Service at Chhatrapur, Bihar and Orissa Province (British India).</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1918' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1918</h4>
+            <p class='inline no-space'>At the age of six, his parents enrolled him in St Michael's, a day school at 20 Charles Road, St Leonards-on-Sea.</p>
+          </div>
+          <p class='details hidden no-space' id='1918-details'>The headmistress of the school, and many others, recognized his talent for science and mathematics.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1922' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1922</h4>
+            <p class='inline no-space'>Alan continues his education at <a class='external' target="_blank" href="https://www.hazelhurstschool.co.uk/">Hazelhurst Preparatory School</a>. an independent school in the village of Frant in Sussex (now East Sussex).</p>
+          </div>
+          <p class='details hidden no-space' id='1922-details'>An independent school in the village of Frant in Sussex (now East Sussex).</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1926' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1926</h4>
+            <p class='inline no-space'>At age 13, Alan moves onto <a class='external' target="_blank" href="https://www.sherborne.org/home/Sherborne"> Sherborne School</a>, an independent school in the market town of Sherborne in Dorset.</p>
+          </div>
+          <p class='details hidden no-space' id='1926-details'> Alan Turing was so determined to attend his first day at his new school, despite the the 1926 General Strike, that he rode his bicycle unaccompanied for 60 miles, whilst only stopping at an overnight inn.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1928' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1928</h4>
+            <p class='inline no-space'>Turing encounters <a class='external' target="_blank" href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein's work.</a></p>
+          </div>
+          <p class='details hidden no-space' id='1928-details'>It's be deduced that not only did Alan Turing grasp Albert Einsteins work at the age of 16, but it was possible that he manage to surmise Einstein's questioning of <a class='external' target="_blank" href="https://en.wikipedia.org/wiki/Newton's_laws_of_motion" >Newton's laws of motion.</a></p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1930' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1930</h4>
+            <p class='inline no-space'>Loses his friend <a class='external' target="_blank" href="https://www.turing.org.uk/scrapbook/spirit.html">Christopher Morcom</a> to complications with bovine tuberculosis.</p>
+          </div>
+          <p class='details hidden no-space' id='1930-details'>This event caused Turing to become ridden with grief in which he coped by working harder on topics related to science and mathematics; both of which he shared with his friend.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1931' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1931</h4>
+            <p class='inline no-space'>Alan Turing begin his university years by becoming an undergraduate at <a class='external' target="_blank"  href="https://www.kings.cam.ac.uk/">King's College, Cambridge</a> to study Mathematics.</p>
+          </div>
+          <p class='details hidden no-space' id='1931-details'>He is able to gain first-class honors in mathematics.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1935' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1935</h4>
+            <p class='inline no-space'>At age 22, he is elected a fellow of king's based off his dissertation proving the central limit theorem.</p>
+          </div>
+          <p class='details hidden no-space' id='1935-details'>Unknown to the committee, the theorem had already been proven by <a class='external' target="_blank" href="https://en.wikipedia.org/wiki/Jarl_Waldemar_Lindeberg">Jarl Waldemar Lindeberg</a></p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1936' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1936</h4>
+            <p class='inline no-space'>Publishes a paper "On Computable Numbers, with an Application to Entscheidungsproblem" and begins to spend more time studying under Church at <a class='external' target="_blank" href="http://www.princeton.edu/main/">Princeton University</a>.</p>
+          </div>
+          <p class='details hidden no-space' id='1936-details'>This paper reformulates Kurt Godel's 1931 results on the limits of proof and computation and thus replaces Godel's universal arithmetic-based formulas with hypothetical devices known as <a class='external' target="_blank"  href="https://en.wikipedia.org/wiki/Turing_machine">Turing machines</a>. In addition, he studied cryptology and built 3/4 of an electro-mechanical binary multiplier.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1938' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1938</h4>
+            <p class='inline no-space'>Obtains his PhD from Princeton.</p>
+          </div>
+          <p class='details hidden no-space' id='1938-details'><a class='external' target="_blank" href="https://en.wikipedia.org/wiki/John_von_Neumann">John Von Neumann</a> wants to hire Alan Turing as his postdoctoral assistant but was declined.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1939' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1939</h4>
+            <p class='inline no-space'>Alan reports to Bletchley Park, the wartime station of the <a class='external' target="_blank" href="https://en.wikipedia.org/wiki/Government_Communications_Headquarters">Government Code and Cypher School (GC&CS)</a>, specifying the bombe.</p>
+          </div>
+          <p class='details hidden no-space' id='1939-details'>The bombe was the first of five major cryptanalytical advances that Turing made during World War II.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1942' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1942</h4>
+            <p class='inline no-space'>Alan and his colleagues manage to break the German Naval <a class='external' target="_blank" href="https://en.wikipedia.org/wiki/Enigma_machine">Enigma System</a>.</p>
+          </div>
+          <p class='details hidden no-space' id='1942-details'>This breakthrough helps the allies tremendously in the Battle of the Atlantic.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1943' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1943</h4>
+            <p class='inline no-space'>Is asked to work as a top-level intelligence link with the USA.</p>
+          </div>
+          <p class='details hidden no-space' id='1943-details'>He agrees and visits to share information on cryptology.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1945' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1945</h4>
+            <p class='inline no-space'>The war ends.</p>
+          </div>
+          <p class='details hidden no-space' id='1945-details'>Alan recieves the <a class='external' target="_blank" href="https://en.wikipedia.org/wiki/Order_of_the_British_Empire">Order of the British Empire award (OBE)</a> for his wartime services.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1946' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1946</h4>
+            <p class='inline no-space'>Alan joins the <a class='external' target="_blank" href="https://www.npl.co.uk/">National Physical Laboratory</a>, in Teddington.</p>
+          </div>
+          <p class='details hidden no-space' id='1946-details'>Alan publishes a paper with the first detailed design of a stored-program computer.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1950' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1950</h4>
+            <p class='inline no-space'>Alan publishes'Computing Machinery and Intelligence'</p>
+          </div>
+          <p class='details hidden no-space' id='1950-details'>From this, he develops the Turing Test, which is an attempt to define a standard for a machine to be called intelligent.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1951' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1951</h4>
+            <p class='inline no-space'>Alan is elected Fellow of the <a class='external' target="_blank" href="https://royalsociety.org/">Royal Society</a>.</p>
+          </div>
+          <p class='details hidden no-space' id='1951-details'>He also went on BBC radio and gave a talk on Artifical Intelligence.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1952' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1952</h4>
+            <p class='inline no-space'>Arrested for gross indecency.</p>
+          </div>
+          <p class='details hidden no-space' id='1952-details'>He losses his security clearance and is offerred chemical treatment in place of prision time. This hormone treatment has a very negative effect on his body.</p>
+        </div>
+
+        <div class='timeline text-left mouse-pt'>
+          <div class='clickable' id='1954' onclick='show(this.id)'>
+            <h4 class='inline no-space'>1954</h4>
+            <p class='inline no-space'>Alan is found dead in his home in Wilmslow Cheshire.</p>
+          </div>
+          <p class='details hidden no-space' id='1954-details'>Autopsy specifies his dead was due to poisoning by <a class='external' target="_blank" href="https://en.wikipedia.org/wiki/Cyanide">cyanide</a>. A half eaten apple laced with the same poison is deemed the delievery weapon.</p>
+        </div>
+      </div>
+
+      <div class='right' id='end'>
+        <a class='padded black-box-shadow external' target="_blank" href="https://www.google.com/search?q=Alan+Turing">Learn More</a>
+      </div>
+    </div>
+  </body>
+</html>
