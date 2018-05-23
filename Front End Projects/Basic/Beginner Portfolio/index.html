@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beginner's Luck</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+      <div id="header">
+      <li class="menu-link"><a href="#profile-div">Profile</a></li>
+      <li class="menu-link"><a href="#quote-div">Quote</a></li>
+      <li class="menu-link"><a href="#about-div">About</a></li>
+      <li class="menu-link"><a href="#projects-div">Projects</a></li>
+      <li class="menu-link"><a href="#contact-div">Contact</a></li>
+    </div>
+
+    <div class="page-div" id="profile-div">
+      <img id="profile-img" src="https://plus.google.com/_/focus/photos/public/AIbEiAIAAABECJ3A2NqxytPf4QEiC3ZjYXJkX3Bob3RvKigxYWMwMzU4YzhjNjVjYzczMDE5ZGJkZTlhNDI5MjZjZDlkNzIyYzk3MAHXYgzllWRIchoYuP6iqJgC9DW6aA?sz=128" />
+      <h1 id="profile-h1">Yue L. Chen</h1>
+      <div>
+        <a href="https://plus.google.com/u/0/me" target="_blank"><img class="profile-icon" src="https://www.seeklogo.net/wp-content/uploads/2015/09/google-plus-new-icon-logo-400x400.png" /></a>
+        <a href="https://github.com/yuelchen" target="_blank"><img class="profile-icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" /></a>
+        <a href="https://codepen.io/yuelchen/" target="_blank"><img class="profile-icon" src="http://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" /></a>
+        <a href="https://www.linkedin.com/in/yuelchen" target="_blank"><img class="profile-icon" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png" /></a>
+      </div>
+    </div>
+
+    <div class="page-div" id="quote-div">
+      <div id="quote-border" onclick="getQuote()">
+        <p id="quote-text">Don't do unto others what you don't want done unto you. - Confucious</p>
+      </div>
+    </div>
+
+    <div class="page-div" id="about-div">
+      <div id="about-container">
+        <h1 class="about-section">Education</h1>
+        <a href="http://www.flsouthern.edu/home.aspx">
+          <h3>Florida Southern College </h3>
+        </a>
+        <p>Bachelor of Applied Science (BASc) Computer Science</p>
+
+        <h1 class="about-section">Employment</h1>
+        <a href="https://www.fdmgroup.com">
+          <h3>FDM Group</h3>
+        </a>
+        <p>Java Developer & Hadoop Administrator</p><br>
+
+        <a href="https://www.creativeyue.com">
+          <h3>CreativeYue</h3>
+        </a>
+        <p>Founder & CEO</p><br>
+
+        <a href="http://www.flsouthern.edu/home.aspx">
+          <h3>Florida Southern College</h3>
+        </a>
+        <p>Information Technology Assistant</p>
+
+        <h1 class="about-section">Certifications</h1>
+        <a href="https://hortonworks.com/services/training/certification/hdpca-certification/">
+          <h3>HDPCA - HDP Certified Administrator</h3>
+        </a>
+        <p>Nov 2017 – Present</p>
+      </div>
+    </div>
+
+    <div class="page-div" id="projects-div">
+      <div id="projects-container">
+        <div id="projects-container-iframe" onclick="goToProject('alanturning')">
+          <div class="project-iframe">
+            <iframe src="https://codepen.io/yuelchen/full/LyzGEM/" scrolling="no"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-div" id="contact-div">
+      <div id="contact-container">
+        <i class="fa fa-envelope fa-5x" id="contact-icon" onclick="openContact()"></i>
+        <i><p id="contact-notice">Click to Contact</p></i>
+      </div>
+    </div>
+
+    <div id="contact-cover" style="display:none" onclick="closeContact()"></div>
+    <div id="contact-div-form">
+      <i class="fa fa-times fa-2x" id="contact-close" onclick="closeContact()"></i>
+      <form action="/action_page.php" id="contact-form">
+        <input class="field-text" type="text" placeholder="Full Name">
+        <input class="field-text" type="text" placeholder="E-mail Address">
+        <input class="field-text" type="text" placeholder="Subject">
+        <textarea class="field-textarea" placeholder="Enter your message here..."></textarea>
+        <input class="field-submit" type="submit" value="Submit">
+      </form> 
+    </div>
+  </body>
+</html>
