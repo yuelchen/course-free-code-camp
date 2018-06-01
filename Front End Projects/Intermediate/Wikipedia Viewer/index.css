@@ -1,12 +1,12 @@
+html{
+  z-index:0;
+  overflow:scroll;
+  background-color:#EDF7FC;
+}
 body{
   margin:0px;
   padding:0px;
   overflow:scroll;
-}
-html{
-  z-index:0;
-  overflow:scroll;
-  background-color:#F5F5F5;
 }
 a:link, a:visited{
   color:white;
@@ -21,8 +21,8 @@ a:hover{
   height:100%;
   padding-top:25%;
   text-align:center;
-  background-color:#F5F5F5;
-  position:fixed; 
+  background-color:#b9E2F5;
+  position:fixed;
 }
 .initialButton{
   margin:0px 5px;
@@ -49,7 +49,9 @@ a:hover{
 #headerContainer h2{
   width:100px;
   margin:10px;
+  color:#50b8e7;
   position:fixed;
+  cursor:default;
 }
 #search{
   width:300px;
