@@ -1,6 +1,6 @@
 # FreeCodeCamp
 Description:     FreeCodeCamp Challenges / Projects Reference - My Solutions Only<br />
-README Updated:  2018.05.23<br />
+README Updated:  2018.06.01<br />
 
 **Featured**<br />
 *Intermediate*: [Local Weather](https://codepen.io/yuelchen/full/KobVGO/) - *Uses geolocation to get weather information*<br />
