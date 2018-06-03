@@ -1,0 +1,147 @@
+:root {
+  --form-text:#1C2833; 
+  --page-text:#FFFFFF;
+  --form-background:#FFFFFF;
+  --page-background:#3E3E3E; 
+}
+
+html, body{
+  margin:0px;
+  overflow-x:hidden;
+  background-color:var(--page-background);
+}
+
+#main-content{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+#title{
+  text-shadow:1px 1px 20px white;
+  animation:moods 5s infinite;
+  cursor:default;
+}
+
+@keyframes moods{
+  0% {color:#EE82EE;}
+  25% {color:#0099CC;}
+  50% {color:#CC9900;}
+  75% {color:#00CC99;}
+  100% {color:#00CCCC;}
+}
+
+#description{
+  color:var(--page-text);
+  font-size:18px;
+  font-style:italic;
+}
+
+#survey-form{
+  top:150px;
+  left:50%;
+  width:800px;
+  height:auto;
+  margin-left:-400px;
+  padding:50px 10px;
+  text-align:center;
+  background-color:var(--form-background);
+  position:absolute;
+}
+
+div{
+  clear:both;
+  margin:0 auto;
+  width:600px;
+}
+
+label{
+  color:var(--form-text);
+  font-size:18px;
+}
+
+div label{
+  float:left;
+  margin-top:15px;
+}
+
+div input{
+  float:right;
+  font-size:16px;
+}
+
+#gender-field{
+  top:15px;
+  position:relative;
+}
+
+fieldset{
+  width:460px;
+  padding:10px 5px;
+  margin:20px auto;
+  text-align:left;
+  border:none;
+}
+
+legend{
+  width:460px;
+  color:var(--form-text);
+  font-size:20px;
+}
+
+#education{
+  width:460px;
+  text-align:left;
+}
+
+#dropdown{
+  width:300px;
+  font-size:18px;
+}
+
+input[type='text'], input[type='email'], input[type='number']{
+  width:500px;
+  height:25px;
+  margin:5px;
+  padding:5px 10px;
+}
+
+input[type='number']{
+  -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.radio, .checkbox{
+  transform:scale(1.4);
+}
+
+textarea{
+  margin:0 auto;
+  width:440px;
+  height:100px;
+  padding:10px;
+  overflow-wrap:break-word;
+  position:relative;
+  resize:none;
+}
+
+#submit{
+  width:100px;
+  height:25px;
+  font-size:18px;
+  color:var(--form-text);
+  border:1px solid var(--page-background);
+  background-color:var(--form-background);
+  margin-top:25px;
+  cursor:pointer;
+}
+
+#submit:hover{
+  color:var(--form-background);
+  border:1px solid var(--page-background);
+  background-color:green;
+}
