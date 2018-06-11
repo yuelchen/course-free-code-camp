@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alan Turing Tribute Page</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <main id="main-content">
+      <h1 id="title">Daily Mood Survey</h1>
+      <p id="description">Help Us Track The Human Mood</p>
+    </main>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your full name" required>
+      </div>
+      <div>
+        <label id="email-label"for="email">E-mail:</label>
+        <input id="email" type="email" placeholder="Enter your e-mail address" required>
+      </div>
+      <div>
+        <label id="number-label"for="number">Number:</label>
+        <input id="number" type="number" min="10" max="10" placeholder="Enter your phone number">
+      </div>
+
+      <fieldset id="gender-field">
+        <legend>What is your gender?</legend>
+        <input class="radio" type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br/>
+        <input class="radio" type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br/>
+        <input class="radio" type="radio" id="other" name="gender" value="other">
+        <label for="other ">Other</label><br/>
+      </fieldset>
+
+      <div id='education'>
+        <legend>What is your highest level of education?</legend>
+        <select id='dropdown' name="education">
+          <option value="high-school">High School</option>
+          <option value="associate">Associate Degree</option>
+          <option value="bachelor">Bachelor Degree</option>
+          <option value="masters">Master Degree</option>
+          <option value="phd">Doctorate Degree</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Which emotions did you feel today?</legend>
+        <input class="checkbox" id='angry' type="checkbox" value="Angry">
+        <label for="angry">Angry</label><br/>
+        <input class="checkbox" id='anxious' type="checkbox" value="Anxious">
+        <label for="angry">Anxious</label><br/>
+        <input class="checkbox" id='afraid' type="checkbox" value="Afraid">
+        <label for="afraid">Afraid</label><br/>
+        <input class="checkbox" id='happy' type="checkbox" value="Happy">
+        <label for="happy">Happy</label><br/>
+        <input class="checkbox" id='sad' type="checkbox" value="Sad">
+        <label for="sad">Sad</label><br/>
+        <input class="checkbox" id='unsure' type="checkbox" value="Unsure">
+        <label for="unsure">Unsure</label><br/>
+       </fieldset>
+
+      <textarea placeholder="Additional Comments"></textarea><br/>
+      <input id="submit" type="submit" onclick="submitted()">
+    </form>
+  </body>
+</html>
