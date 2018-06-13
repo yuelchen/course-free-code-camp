@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alan Turing Tribute Page</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="nav-desc">PHP Documentation</header>
+      <a class="nav-link" href="#Document_Template">Document Template</a>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Hello_World">Hello World</a>
+      <a class="nav-link" href="#Comments">Comments</a>
+      <a class="nav-link" href="#Variables">Variables</a>
+      <a class="nav-link" href="#Operators">Operators</a>
+      <a class="nav-link" href="#Statements">Statements</a>
+      <a class="nav-link" href="#Loops">Loops</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+      <a class="nav-link" href="#Objects">Objects</a>
+      <a class="nav-link" href="#References">References</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Document_Template">
+        <header>Document Template</header> 
+        <strong>Are topics, highlighting some verbose information for a particular section.</strong>
+        <p>Any text found in this format should be regarded as informational.</p>
+        <code>This will contain php code for use of reference.</code>
+        <li>This should be disregarded as a specific requirement for a particular topic.</li>
+      </section>
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>PHP is a language typically used to make the hosting server generate a dynamic output - an output that is potentially different each time a browser requests a page.</p>
+        <p>Some things to know about PHP, like any scripting lanaguge, is that it has a particular set of syntax rules that lets the processor know it's time to read PHP.</p>
+        <p>The opening and closing tags for PHP starts with the <em>less-than question-mark php</em> symbol and ends when it sees the <em>question-make greater-than</em> symbol.</p>
+        <code>&lt;?php<br/>&ensp;//Everything in between the php open and close tags will need to follow php syntax<br/ >?&gt;<br/></code>
+        <p>Another basic syntax for PHP is the use of semi-colons to end all php commands. See the hello world example just below for reference.</p>
+        <p>Lastly, regarding basic syntax for PHP, all variable declarations must start with the dollar sign symbol.</p>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <p>See the below code snippet for returning a simple hello world string:</p>
+        <code>&lt;?php<br/>&ensp;echo "Hello World!";<br/ >?&gt;<br/></code>
+        <p>Note: the semicolon is needed after every php command.</p>
+      </section>
+      <section class="main-section" id="Comments">
+        <header>Comments</header>
+        <strong>Single-line Comment</strong>
+        <code>//This entire line is a comment<br/>$name = "Yue Chen"; //Everything after the two foward-slashes is a comment</code>
+        <strong>Multi-line Comment</strong>
+        <code>/* Everything in between<br/>the forward-slash star<br/><br>and<br/><br/>star forward-slash is a<br/>comment block */</code>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>PHP makes variables simple as the type does not matter.</p>
+        <p>Like javascript, you can assign strings, numerics and arrays to the same variable name.</p>
+        <code>$stringVar = "Yue Chen"; //String assignment<br/>$numberVar = 25; //Integer assignment<br/>$numberVar = 22.5; //Double assignment<br/>$arrayVar = array("Laptop", "Phone", "MP3 Player"); //Array assignment<br/></code>
+        <p>Things to take into consideration, is variable naming conventions, see the list below:</p>
+        <li>Variable names must start with a letter of the alphabet or the underscore character.</li>
+        <li>Every character preceding the first can only contain alphabet characters, numbers or underscores.</li>
+        <li>Variable names cannot contain spaces; if there are multiple words for the variable name, use underscore for reability.</li>
+        <li>Variable names are case sensitive so $hello and $Hello will be seen as two different variables.</li>
+      </section>
+      <section class="main-section" id="Operators">
+        <header>Operators</header>
+        <p>PHP offers a lot of powerful operators which gives us the tools to do a number of arithmetic, string, and logical operations.</p>
+        <strong>Operator Types</strong>
+        <ul><b>Arithmetic</b> (used for) Basic Mathematics&emsp;<code>$a + $b</code></ul>
+        <ul><b>Array</b> (used for) Array Union&emsp;<code>$a + $b</code></ul>
+        <ul><b>Assignment</b> (used for) Assigning values&emsp;<code>$a = $b + $c</code></ul>
+        <ul><b>Bitwise</b> (used for) Manipulating bits within bytes&emsp;<code>12 ^ 9</code></ul>
+        <ul><b>Comparison</b> (used for) Comparing two values&emsp;<code>$a &lt; $b</code></ul>
+        <ul><b>Execution</b> (used for) Executing contents of backticks&emsp;<code>`ls -la`</code></ul>
+        <ul><b>Increment</b> (used for) Adding 1&emsp;<code>$a++</code></ul>
+        <ul><b>Decrement</b> (used for) Subtracting 1&emsp;<code>$a--</code></ul>
+        <ul><b>Logical</b> (used for) Boolean comparison&emsp;<code>$a and $b</code></ul>
+        <ul><b>String</b> (used for) Concatenation&emsp;<code>$a . $b</code></ul>
+        <strong>Operator Precendence - from High to Low</strong>
+        <ul>Parentheses: <code>()</code></ul>
+        <ul>Increment/Decrement: <code>++</code> <code>--</code></ul>
+        <ul>Logical: <code>!</code></ul>
+        <ul>Arithmetic: <code>*</code> <code>/</code> <code>%</code></ul>
+        <ul>Arithmetic and String: <code>+</code> <code>-</code> <code>.</code></ul>
+        <ul>Bitwise: <code>&gt;&gt;</code> <code>&lt;&lt;</code></ul>
+        <ul>Comparison: <code>&lt;</code> <code>&lt;=</code> <code>&gt;</code> <code>&gt;=</code> <code>&lt;&gt;</code></ul>
+        <ul>Bitwise (and references): <code>&amp;</code></ul>
+        <ul>Bitwise: <code>^</code></ul>
+        <ul>Bitwise: <code>|</code></ul>
+        <ul>Logical: <code>&amp;&amp;</code></ul>
+        <ul>Logical: <code>||</code></ul>
+        <ul>Ternary: <code>?</code> <code>:</code></ul>
+        <ul>Assignment: <code>=</code> <code>+=</code> <code>-=</code> <code>*=</code> <code>/=</code> <code>.=</code> <code>%=</code> <code>&amp;=</code> <code>!=</code> <code>^=</code> <code>&lt;&lt;=</code> <code>&gt;&gt;=</code></ul>
+        <ul>Logical: <code>and</code></ul>
+        <ul>Logical: <code>xor</code></ul>
+        <ul>Logical: <code>or</code></ul>
+        <strong>Associativity</strong>
+        <ul>Creates a new object: <code>NEW</code></ul>
+        <ul>Logical NOT: <code>!</code></ul>
+        <ul>Bitwise NOT: <code>~</code></ul>
+        <ul>Increment and Decrement: <code>++</code> <code>--</code></ul>
+        <ul>Unary plus and negation: <code>+</code> <code>-</code></ul>
+        <ul>Cast to an integer: <code>(int)</code></ul>
+        <ul>Cast to a float: <code>(double)</code></ul>
+        <ul>Cast to a string: <code>(string)</code></ul>
+        <ul>Cast to an array: <code>(array)</code></ul>
+      </section>
+      <section class="main-section" id="Statements">
+        <header>Statements</header>
+        <p>Statements can be conditional, which is necessary when determining how to alter a programs flow based on a particualr input, value or event.</p>
+        <p>For the sake of covering this topic, we are going to go over two basic statements:</p>
+        <strong><li>if, elseif and else statement</li></strong>
+        <code>&lt;?php<br/>&ensp;$cash = 105;<br/>&ensp;$price = 100;<br/>&ensp;if($cash &lt; $price)<br/>&ensp;&ensp;echo "You cannot afford this gift!";<br/>&ensp;elseif($case &gt; $price)<br/>&ensp;&ensp;echo "You can afford this and treat yourself something small.";<br/>&ensp;else<br/>&ensp;&ensp;echo "You're broke now...";<br/>?&gt;<br/></code>
+        <p>Note: elseif and else are optional.</p>
+        <strong><li>The ? (ternary) Operator</li></strong>
+        <p>Just a more compact way of doing if/else statements.</p>
+        <code>&lt;?php<br/>&ensp;$cash = 105;<br/>&ensp;$price = 100;<br/>&ensp;echo $case &lt;= $price? "Buy the gift!" : "You cannot afford this on your budget.";<br/>?&gt;<br/></code>
+        <strong><li>Switch Statement</li></strong>
+        <code>&lt;?php<br/>&ensp;switch($value){<br/>&ensp;&ensp;case "apple":<br/>&ensp;&ensp;&ensp;echo "value matched apple!";<br/>&ensp;&ensp;&ensp;break;<br/>&ensp;&ensp;case "orange":<br/>&ensp;&ensp;&ensp;echo "value matched orange!";<br/>&ensp;&ensp;&ensp;break;<br/>&ensp;&ensp;case "banana":<br/>&ensp;&ensp;&ensp;echo "value matched banana!";<br/>&ensp;&ensp;&ensp;break;<br/>&ensp;&ensp;default:<br/>&ensp;&ensp;&ensp;echo "value didn't match anything, must be some other random fruit.";<br/>&ensp;&ensp;&ensp;break;<br/>&ensp;}<br/>?&gt;<br/></code>
+        <p>Note: default and the following cases after the initial case are optional.</p>
+      </section>
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <p>One of the great things about coding is that they can do repeatable processes extremely fast and precise.</p>
+        <p>Here is a list of loop types with respective examples below:</p>
+        <strong><li>while Loop</li></strong>
+        <code>&lt;?php<br/>&ensp;$fuel = 10;<br/>&ensp;while($fuel > 1)<br/>&ensp;&ensp;echo "Gonna keep driving, still not down to my last gallon";<br/>?&gt;<br/></code>
+        <strong><li>do...while Loop</li></strong>
+        <code>&lt;?php<br/>&ensp;$counter = 0;<br/>&ensp;do<br/>&ensp;&ensp;echo "Counting " + counter;<br/>&ensp;while(++counter &lt;= 100);?&gt;<br/></code>
+        <strong><li>for Loop</li></strong>
+        <code>&lt;?php<br/>&ensp;$months = 12;<br/>&ensp;for($i=0;$i&lt;=$months;$i++)<br/>&ensp;&ensp;echo "Month " + $i;<br/>?&gt;<br/></code>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>There are hundreds of built in functions within php that comes readily availabile, such as the print() function.<p>
+        <p>To use a function, simply call it by it's name, make sure the keep the parentheses with expected parameters</p>
+        <strong>Function Syntax</strong>
+        <code>function functionName([parameter [,...]]){<br/>&ensp;//function code or statements<br/>}<br/></code>
+        <li>The definition starts witht he word function.</li>
+        <li>The name of the function follows after, which must start with a letter or underscore symbol, followed by any combination of numbers, letters or underscores.</li>
+        <li>The parentheses are required.</li>
+        <li>The parameters are optional; one to many values which are seperated by commas.</li>
+        <strong>Functions can return values</strong>
+        <code>$lowered = strtolower("Hello World!");<br/>echo $lowered;<br/></code>
+        <samp>Should output: hello world!</samp>
+      </section>
+      <section class="main-section" id="Objects">
+        <header>Objects</header>
+        <p>Objects are like functions, reusuable bits of code, but instead, a class or template used continously.</p>
+        <p>A class in this case is a composite of code and data, which you will instantiate if you want to use it.</p>
+        <p>The data assoicated with these instantiated objects are called properties and the functions of classes are called methods.</p>
+        <p>When writing classes, its best to write you methods in a way where you data are not visible to anyone but the class functions.</p>
+        <strong>Declaring a Class</strong>
+        <code>&lt;?php<br/>&ensp;$object = new Login;<br/>&ensp;class Login{<br/>&ensp;&ensp;public $username, $password;<br/>&ensp;&ensp;function getLogin(){<br/>&ensp;&ensp;&ensp;echo "Username: " + $username;<br/>&ensp;&ensp;}<br/>&ensp;}<br/>?&gt;</code>
+        <strong>Creating an Object</strong>
+        <code>&lt;?php<br/>&ensp;$object = new Login;<br/>&ensp;$temp = new Login('name', 'password');<br/>?&gt;</code>
+        <strong>Accessing an Object</strong>
+        <code>&lt;?php<br/>&ensp;$object-&gt;name = "Yue";<br/>&ensp;$object-&gt;password = "passwd";<br/>&ensp;print_r($object);<br/>?&gt;</code>
+      </section>
+      <section class="main-section" id="References">
+        <header>References</header>
+        <li>Nixon, Robin. Learning PHP, MySQL & JavaScript: with JQuery, CSS & HTML5. OReilly, 2013</li>
+      </section>
+    </main>
+  </body>
+</html>
