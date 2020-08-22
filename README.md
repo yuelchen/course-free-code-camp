@@ -1,4 +1,4 @@
-# FreeCodeCamp
+# course-free-code-camp
 Description:     FreeCodeCamp Challenges / Projects Reference - My Solutions Only<br />
 README Updated:  2018.06.12<br />
 
