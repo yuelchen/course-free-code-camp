@@ -1,19 +1,33 @@
 # course-free-code-camp
-Description:     FreeCodeCamp Challenges / Projects Reference - My Solutions Only<br />
-README Updated:  2018.06.12<br />
+This repository is for storing solved FreeCodeCamp challenges in JavaScript and WebDesign. 
+🌐 GitHub Page (featured Webpage): 
 
-# Featured (Current)
-- *Pure HTML&CSS*: [Tribute Page](https://codepen.io/yuelchen/full/vrgJQB/) - *Biography of Alan Turing*<br />
-- *Pure HTML&CSS*: [Survey Form](https://codepen.io/yuelchen/full/VdPzEJ/) - *A form to gather a user's mood*<br />
-- *Pure HTML&CSS*: [Product Landing Page](https://codepen.io/yuelchen/full/oyBeaO/) - *Photography lesson service website*<br />
-- *Pure HTML&CSS*: [Technical Documentation Page](https://codepen.io/yuelchen/full/JZEyaw/) - *PHP Documentation for Beginners*<br />
-- *Pure HTML&CSS*: [Personal Portfolio Webpage](https://codepen.io/yuelchen/full/YvZyaY/) - *Basic Personal Portfolio*<br />
+📋 TODO List:
+- *Detail commenting to explain reasoning and logic of code and elements*.
 
-# Featured (Archived)
-- *Intermediate*: [Local Weather](https://codepen.io/yuelchen/full/KobVGO/) - *Uses geolocation to get weather information*<br />
-- *Intermediate*: [Random Quote Machine](https://codepen.io/yuelchen/full/Ovrywm/) - *Displays quotes at random and allows publication (optional)*<br />
-- *Intermediate*: [Wikipedia Viewer](https://codepen.io/yuelchen/full/XEwNJG/) - *Filters Wikipedia search results using API*<br />
-- *Advanced*: [Simple Calculator](https://codepen.io/yuelchen/full/PaYxBg/) - *Performs simple mathematical operations*<br />
-- *Advanced*: [Tomato Timepiece](https://codepen.io/yuelchen/full/VdYqKd/) - *A pomodoro clock for time management*<br />
+📂 Directory Structure Shortcuts:
+- [Local Weather](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Local%20Weather): 
+*Uses geolocation to get weather information*
+- [Personal Portfolio](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Personal%20Portfolio): 
+*Basic Personal Portfolio*
+- [Product Landing](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Product%20Landing): 
+*Photography lesson service website*
+- [Random Quote Machine](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Random%20Quote%20Machine): : 
+*Displays quotes at random and allows like and send-as tweet (optional)*
+- [Simple Calculator](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Simple%20Calculator): 
+*Performs simple mathematical operations*
+- [Survery Form](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Survey%20Form): 
+*A form to gather a user's mood*
+- [Technical Documentation](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Technical%20Documentation): 
+*PHP Documentation for Beginners*
+- [Tomato Timepiece](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Tomato%20Timepiece): 
+*A pomodoro clock for time management*
+- [Tribute Page](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Tribute%20Page): 
+*Biography of Alan Turing*
+- [Twitch.tv API](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Twitch.tv%20API): 
+*Retrieved static content and applies filter display from Twitch API response*
+- [Wikipedia Viewer](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Wikipedia%20Viewer): 
+*Filters Wikipedia search results using API*
 
-Try it out yourself @https://www.freecodecamp.org/
+
+:information_source: Try it out yourself @https://www.freecodecamp.org/
