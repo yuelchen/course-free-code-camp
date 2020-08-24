@@ -9,7 +9,7 @@
  */
 
 function truncateString(str, num) {
-  return str.length > num ? (num > 3 ? str.substring(0, num-3) + "..." : str.substring(0, num) + "..." ) : str;
+	return str.length > num ? (num > 3 ? str.substring(0, num-3) + "..." : str.substring(0, num) + "..." ) : str;
 }
 
 /* =============================================================================

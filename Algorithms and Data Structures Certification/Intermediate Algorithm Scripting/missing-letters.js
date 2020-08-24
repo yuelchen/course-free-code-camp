@@ -9,17 +9,21 @@
 
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-function fearNotLetter(str){
-  var missing;
-  var first = str.charAt(0);
-  var last = str.charAt(str.length-1);
-  if(alphabet.indexOf(last)+1 - alphabet.indexOf(first) != str.length){
-    missing = "";
-    for(i=alphabet.indexOf(first);i<alphabet.indexOf(last);i++)
-      if(!str.includes(alphabet[i]))
-        missing += alphabet[i];
-  } 
-  return missing;
+function fearNotLetter(str) {
+	var missing;
+	var first = str.charAt(0);
+	var last = str.charAt(str.length-1);
+  
+	if(alphabet.indexOf(last)+1 - alphabet.indexOf(first) != str.length) {
+		missing = "";
+		for(i=alphabet.indexOf(first);i<alphabet.indexOf(last);i++) {
+			if(!str.includes(alphabet[i])) {
+				missing += alphabet[i];
+			}
+		}
+	} 
+	
+	return missing;
 }
 
 /* =============================================================================

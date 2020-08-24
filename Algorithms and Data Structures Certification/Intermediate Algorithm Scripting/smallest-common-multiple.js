@@ -6,16 +6,17 @@
  * https://www.mathsisfun.com/least-common-multiple.html
  */
 
-function greatestCommons(x, y){
-  return ! y ? x : greatestCommons(y, x % y);
+function greatestCommons(x, y) {
+	return ! y ? x : greatestCommons(y, x % y);
 }
 
-function smallestCommons(arr){
-  var scm = 1;
-  for(i=Math.min.apply(null, arr);i<=Math.max.apply(null, arr);i++){
-    scm = (scm * i) / greatestCommons(scm, i);
-  }
-  return scm;
+function smallestCommons(arr) {
+	var scm = 1;
+	for(i=Math.min.apply(null, arr);i<=Math.max.apply(null, arr);i++) {
+		scm = (scm * i) / greatestCommons(scm, i);
+	}
+	
+	return scm;
 }
 
 /* =============================================================================

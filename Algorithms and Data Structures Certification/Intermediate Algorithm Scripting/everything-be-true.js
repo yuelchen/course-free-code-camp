@@ -3,12 +3,14 @@
  */
 
 function truthCheck(collection, pre) {
-  var exists = true;
-  collection.forEach(function(index){
-    if(!(index.hasOwnProperty(pre)) || index[pre] == null || index[pre] == 0 || index[pre].toString() == "NaN")
-      exists = false;
-  });
-  return exists;
+	var exists = true;
+	collection.forEach(function(index) {
+		if(!(index.hasOwnProperty(pre)) || index[pre] == null || index[pre] == 0 || index[pre].toString() == "NaN") {
+			exists = false;
+		}
+	});
+	
+	return exists;
 }
 
 /* =============================================================================

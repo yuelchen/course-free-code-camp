@@ -11,8 +11,9 @@
  */
 
 function palindrome(str) {
-  var forward = str.replace(/[\W\s_,]/g, "").toLowerCase();
-  return forward === str.replace(/[\W\s_,]/g, "").split("").reverse().join("").toLowerCase();
+	var forward = str.replace(/[\W\s_,]/g, "").toLowerCase();
+	
+	return forward === str.replace(/[\W\s_,]/g, "").split("").reverse().join("").toLowerCase();
 }
 
 /* =============================================================================

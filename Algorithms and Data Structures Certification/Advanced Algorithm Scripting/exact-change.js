@@ -11,72 +11,77 @@
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
  */
 
-function getValue(bill){
-  var value = 0;
-  switch(bill){
-    case "ONE HUNDRED":
-      value = 100.00;
-      break;
-    case "TWENTY":
-      value = 20.00;
-      break;
-    case "TEN":
-      value = 10.00;
-      break;
-    case "FIVE":
-      value = 5.00;
-      break;
-    case "ONE":
-      value = 1.00;
-      break;
-    case "QUARTER":
-      value = 0.25;
-      break;
-    case "DIME":
-      value = 0.10;
-      break;
-    case "NICKEL":
-      value = 0.05;
-      break;
-    case "PENNY":
-      value = 0.01;
-      break;
-  }
-  return value;
+function getValue(bill) {
+	var value = 0;
+	switch(bill) {
+		case "ONE HUNDRED":
+			value = 100.00;
+			break;
+		case "TWENTY":
+			value = 20.00;
+			break;
+		case "TEN":
+			value = 10.00;
+			break;
+		case "FIVE":
+			value = 5.00;
+			break;
+		case "ONE":
+			value = 1.00;
+			break;
+		case "QUARTER":
+			value = 0.25;
+			break;
+		case "DIME":
+			value = 0.10;
+			break;
+		case "NICKEL":
+			value = 0.05;
+			break;
+		case "PENNY":
+			value = 0.01;
+			break;
+	}
+	
+	return value;
 }
 
-function registerTotal(cid){
-  var total = 0;
-  cid.forEach(function(type){ total += type[1]; });
-  return total;
+function registerTotal(cid) {
+	var total = 0;
+	cid.forEach(function(type) { 
+		total += type[1]; 
+	});
+  
+	return total;
 }
 
 function checkCashRegister(price, cash, cid) {
-  var change = []; 
-  var difference = cash - price;
-  cid.reverse().forEach(function(type, index){
-    if(difference > 0){
-      var count = Math.floor(difference / getValue(type[0]));
-      if(difference >= type[1] && count > 0){
-        change.push([type[0], type[1]]);
-        difference = Math.round((difference - type[1]) * 100) / 100;
-        cid[index][1] = 0;
-      }
-      else if(difference < type[1] && count > 0){
-        var total = getValue(type[0]) * count;
-        change.push([type[0], total]);
-        difference = Math.round((difference - total) * 100) / 100;
-        cid[index][1] -= total;
-      }
-    }
-  });
+	var change = []; 
+	var difference = cash - price;
   
-  if(difference > 0)
-    return "Insufficient Funds";
-  else if(registerTotal(cid) == 0)
-    return "Closed";
-  else
-    return change;
+	cid.reverse().forEach(function(type, index) {
+		if(difference > 0) {
+			var count = Math.floor(difference / getValue(type[0]));
+			if(difference >= type[1] && count > 0) {
+				change.push([type[0], type[1]]);
+				difference = Math.round((difference - type[1]) * 100) / 100;
+				cid[index][1] = 0;
+			} else if(difference < type[1] && count > 0) {
+				var total = getValue(type[0]) * count;
+				change.push([type[0], total]);
+				difference = Math.round((difference - total) * 100) / 100;
+				cid[index][1] -= total;
+			}
+		}
+	});
+  
+	if(difference > 0) {
+		return "Insufficient Funds";
+	} else if(registerTotal(cid) == 0) {
+		return "Closed";
+	} else {
+		return change;
+	}
 }
 
 /* =============================================================================

@@ -10,11 +10,12 @@
  */
 
 function binaryAgent(str) {
-  var word = "";
-  str.split(" ").forEach(function(index){
-    word += String.fromCharCode(parseInt(index, 2));
-  });
-  return word;
+	var word = "";
+	str.split(" ").forEach(function(index) {
+		word += String.fromCharCode(parseInt(index, 2));
+	});
+  
+	return word;
 }
 
 /* =============================================================================

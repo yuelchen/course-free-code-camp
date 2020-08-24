@@ -16,17 +16,19 @@ var romans = {
     1000:"M", 2000:"MM", 3000:"MMM"};
 
 function convertToRoman(num){
-  var roman = "";
-  do{
-    var power = parseInt(num.toString().length)-1;
-    var exp = Math.pow(10, power);
-    roman += romans[(Math.floor(num / exp) * exp)];
-    num -= Math.floor(num / exp) * exp;
-    if(num.toString().length == 1 && num != 0){
-      roman += romans[num];
-    }
-  } while(num.toString().length > 1);
-  return roman;
+	var roman = "";
+	do {
+		var power = parseInt(num.toString().length)-1;
+		var exp = Math.pow(10, power);
+		roman += romans[(Math.floor(num / exp) * exp)];
+		num -= Math.floor(num / exp) * exp;
+	
+		if(num.toString().length == 1 && num != 0) {
+			roman += romans[num];
+		}
+	} while(num.toString().length > 1);
+	
+	return roman;
 }
 
 /* =============================================================================

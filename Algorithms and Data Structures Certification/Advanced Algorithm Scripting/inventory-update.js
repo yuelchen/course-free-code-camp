@@ -9,28 +9,32 @@
  */
 
 function compare(x, y) {
-  if (x[1] < y[1])
-    return -1;
-  else if (x[1] > y[1])
-    return 1;
-  else 
-    return 0;
+	if (x[1] < y[1]) {
+		return -1;
+	} else if (x[1] > y[1]) {
+		return 1;
+	} else { 
+		return 0;
+	}
 }
 
 function updateInventory(arr1, arr2) {
-  for(i=0;i<arr2.length;i++){
-    var exist = false;
-    for(j=0;j<arr1.length;j++)
-      if(arr2[i][1] == arr1[j][1]){
-        exist = true;
-        arr1[j][0] += arr2[i][0]; 
-        break;
-      }
+	for(i=0;i<arr2.length;i++) {
+		var exist = false;
+		for(j=0;j<arr1.length;j++) {
+			if(arr2[i][1] == arr1[j][1]) {
+				exist = true;
+				arr1[j][0] += arr2[i][0]; 
+				break;
+			}
+		}
         
-    if(exist == false)
-      arr1.push(arr2[i]);
-  }
-  return arr1.sort(compare);
+		if(exist == false) {
+			arr1.push(arr2[i]);
+		}
+	}
+	
+	return arr1.sort(compare);
 }
 
 /* =============================================================================

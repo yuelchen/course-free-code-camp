@@ -7,19 +7,19 @@
  */
 
 function spinalCase(str){
-  //append '-' to beginning of all capital letters;
-  var replaced = str.replace(/([A-Z])/g, "-$1");
+	//append '-' to beginning of all capital letters;
+	var replaced = str.replace(/([A-Z])/g, "-$1");
  
-  //replace all underscores and spaces with '-'
-  replaced = replaced.replace(/_|\s/g, "-");
+	//replace all underscores and spaces with '-'
+	replaced = replaced.replace(/_|\s/g, "-");
   
-  //replace all multi-occurence with a single '-'
-  replaced = replaced.replace(/(--+)/g, "-");
+	//replace all multi-occurence with a single '-'
+	replaced = replaced.replace(/(--+)/g, "-");
 
-  //replace first character if '-'
-  replaced = replaced.replace(/(^-)/, "");
+	//replace first character if '-'
+	replaced = replaced.replace(/(^-)/, "");
   
-  return replaced.toLowerCase();
+	return replaced.toLowerCase();
 }
 
 /* =============================================================================

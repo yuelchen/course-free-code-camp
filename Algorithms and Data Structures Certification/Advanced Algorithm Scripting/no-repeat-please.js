@@ -10,27 +10,32 @@
 var repeatOnly = /^([a-z])\1+$/;
 var repeatStr = /([a-z])\1+/;
 
-function permNumbers(string){
-  var results = [];
-  if(string.length == 1)
-    results.push(string);
-  else
-    for(var i=0;i<string.length;i++){
-      var remaining = permNumbers(string.substring(0,i) + string.substring(i+1));
-      for(var j=0;j<remaining.length;j++)
-        if(!(repeatStr.test(string[i] + remaining[j])))
-          results.push(string[i] + remaining[j]);
-    }
-  return results;
+function permNumbers(string) {
+	var results = [];
+	if(string.length == 1) {
+		results.push(string);
+	} else {
+		for(var i=0;i<string.length;i++) {
+			var remaining = permNumbers(string.substring(0,i) + string.substring(i+1));
+			for(var j=0;j<remaining.length;j++) {
+				if(!(repeatStr.test(string[i] + remaining[j]))) {
+					results.push(string[i] + remaining[j]);
+				}
+			}
+		}
+	}
+	
+	return results;
 }
 
 function permAlone(string) {
-  if(string.length == 1)
-    return 1;
-  else if(repeatOnly.test(string))
-    return 0;
-  else
-    return permNumbers(string).length;
+	if(string.length == 1) {
+		return 1;
+	} else if(repeatOnly.test(string)) {
+		return 0;
+	} else {
+		return permNumbers(string).length;
+	}
 }
 
 /* =============================================================================

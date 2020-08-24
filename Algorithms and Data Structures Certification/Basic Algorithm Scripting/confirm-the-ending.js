@@ -9,7 +9,7 @@
  */
 
 function confirmEnding(str, target) {
-  return str.substring(str.length-target.length) === target;
+	return str.substring(str.length-target.length) === target;
 }
 
 /* =============================================================================
@@ -35,6 +35,6 @@ confirmEnding("Open sesame", "pen");
 //should return false
 
 confirmEnding("If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain"); 
-should return false
+//should return false
 
-Do not use the built-in method .endsWith() to solve the challenge.
+//do not use the built-in method .endsWith() to solve the challenge.

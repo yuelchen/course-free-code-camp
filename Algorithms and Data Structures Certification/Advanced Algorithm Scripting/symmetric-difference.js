@@ -8,33 +8,39 @@
  * https://www.youtube.com/watch?v=PxffSUQRkG4
  */
 
-function symmetricDifference(arr){
-  var difference = [];
-  for(i=0;i<arr.length;i++)
-    for(j=0;j<arr[i].length;j++){
-      if(difference.indexOf(arr[i][j]) == -1)
-        difference.push(arr[i][j]);
-      else
-        difference.splice(difference.indexOf(arr[i][j]), 1);
-    }
-  return difference;
-}
-
-function removeSubArrayRepeat(arr){
-  var uniques = [];
-  arr.forEach(function(x){
-    if(uniques.indexOf(x) == -1)
-      uniques.push(x);
-  });  
-  return uniques;
-}
-
-function sym(args){
-  var noSubArrayRepeat = [];
-  for(var i=0;i<arguments.length;i++)
-    noSubArrayRepeat.push(removeSubArrayRepeat(arguments[i]));
+function symmetricDifference(arr) {
+	var difference = [];
+	for(i=0;i<arr.length;i++) {
+		for(j=0;j<arr[i].length;j++) {
+			if(difference.indexOf(arr[i][j]) == -1) {
+				difference.push(arr[i][j]);
+			} else {
+				difference.splice(difference.indexOf(arr[i][j]), 1);
+			}
+		}
+	}
   
-  return symmetricDifference(noSubArrayRepeat);
+	return difference;
+}
+
+function removeSubArrayRepeat(arr) {
+	var uniques = [];
+	arr.forEach(function(x) {
+		if(uniques.indexOf(x) == -1) {
+			uniques.push(x);
+		}
+	});  
+  
+	return uniques;
+}
+
+function sym(args) {
+	var noSubArrayRepeat = [];
+	for(var i=0;i<arguments.length;i++) {
+		noSubArrayRepeat.push(removeSubArrayRepeat(arguments[i]));
+	}
+  
+	return symmetricDifference(noSubArrayRepeat);
 }
 
 /* =============================================================================

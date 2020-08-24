@@ -7,15 +7,18 @@
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
  */
 
-function uniteUnique(){
-  var unique = [];
-  for(i=0;i<arguments.length;i++){
-    var array = arguments[i];
-    for(j=0;j<array.length;j++)
-      if(unique.indexOf(array[j]) == -1)
-        unique.push(array[j]);
-  }
-  return unique;
+function uniteUnique() {
+	var unique = [];
+	for(i=0;i<arguments.length;i++) {
+		var array = arguments[i];
+		for(j=0;j<array.length;j++) {
+			if(unique.indexOf(array[j]) == -1) {
+				unique.push(array[j]);
+			}
+		}
+	}
+	
+	return unique;
 }
 
 /* =============================================================================

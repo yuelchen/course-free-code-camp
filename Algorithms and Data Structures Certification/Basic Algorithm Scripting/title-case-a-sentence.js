@@ -7,10 +7,12 @@
  */
 
 function titleCase(str) {
-  var words = str.split(" ");
-  for(i=0;i<words.length;i++)
-    words[i] = words[i].substring(0,1).toUpperCase() + words[i].substring(1).toLowerCase();
-  return words.join(" ");
+	var words = str.split(" ");
+	for(i=0;i<words.length;i++) {
+		words[i] = words[i].substring(0,1).toUpperCase() + words[i].substring(1).toLowerCase();
+	}
+	
+	return words.join(" ");
 }
 
 /* =============================================================================

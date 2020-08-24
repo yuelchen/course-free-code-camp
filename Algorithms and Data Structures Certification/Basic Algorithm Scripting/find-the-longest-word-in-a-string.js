@@ -8,12 +8,13 @@
  */
 
 function findLongestWord(str) {
-  return str.split(" ").reduce(function(x,y){
-    if(x.length > y.length)
-      return x;
-    else 
-      return y;
-  }).length;
+	return str.split(" ").reduce(function(x,y) {
+		if(x.length > y.length) {
+			return x;
+		} else {
+			return y;
+		}
+	}).length;
 }
 
 /* =============================================================================

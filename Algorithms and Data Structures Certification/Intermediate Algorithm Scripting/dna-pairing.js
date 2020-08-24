@@ -9,25 +9,26 @@
  */
 
 function pairElement(str) {
-  var single = str.split("");
-  var pair = [];
-  for(i=0;i<single.length;i++){
-    switch(single[i]){
-      case "A":
-        pair.push([single[i], "T"]);
-        break;
-      case "C":
-        pair.push([single[i], "G"]);
-        break;
-      case "G":
-        pair.push([single[i], "C"]);
-        break;
-      case "T":
-        pair.push([single[i], "A"]);
-        break;
-    }
-  }
-  return pair;
+	var single = str.split("");
+	var pair = [];
+	for(i=0;i<single.length;i++) {
+		switch(single[i]) {
+			case "A":
+				pair.push([single[i], "T"]);
+				break;
+			case "C":
+				pair.push([single[i], "G"]);
+				break;
+			case "G":
+				pair.push([single[i], "C"]);
+				break;
+			case "T":
+				pair.push([single[i], "A"]);
+				break;
+		}
+	}
+	
+	return pair;
 }
 
 /* =============================================================================

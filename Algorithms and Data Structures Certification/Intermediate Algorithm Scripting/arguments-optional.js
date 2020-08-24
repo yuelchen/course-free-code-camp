@@ -8,15 +8,17 @@
  */
  
 function addTogether(x) {
-  if(typeof x === 'string' || typeof arguments[1] === 'string')
-    return undefined;
-  else if(arguments[1])
-    return x + arguments[1];
-  else
-    return function(y){
-      if(!(Array.isArray(y)))
-        return x += y;
-    };
+	if(typeof x === 'string' || typeof arguments[1] === 'string') {
+		return undefined;
+	} else if(arguments[1]) {
+		return x + arguments[1];
+	} else {
+		return function(y) {
+			if(!(Array.isArray(y))) {
+				return x += y;
+			}
+		};
+	}
 }
 
 /* =============================================================================

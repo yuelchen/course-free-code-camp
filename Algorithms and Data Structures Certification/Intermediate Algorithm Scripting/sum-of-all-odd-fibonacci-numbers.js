@@ -8,24 +8,26 @@
  */
 
 function sumOdd(total, num) {
-  if(num % 2 != 0)
-    return total + num;
-  else 
-    return total;
+	if(num % 2 != 0) {
+		return total + num;
+	} else {
+		return total;
+	}
 }
 
 function sumFibonacci(num){
-  var current = 1;
-  var previous = 1;
-  var sequence = [1];
+	var current = 1;
+	var previous = 1;
+	var sequence = [1];
   
-  while(current <= num){
-    var holder = current;
-    current += previous;
-    previous = holder;
-    sequence.push(previous);
-  }
-  return sequence.reduce(sumOdd);
+	while(current <= num) {
+		var holder = current;
+		current += previous;
+		previous = holder;
+		sequence.push(previous);
+	}
+	
+	return sequence.reduce(sumOdd);
 }
 
 /* =============================================================================

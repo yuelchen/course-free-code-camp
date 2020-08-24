@@ -9,19 +9,23 @@
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
  */
  
- function dropElements(arr, func) {
-  var afterDrop = [];
-  var noDrop = true;
+function dropElements(arr, func) {
+	var afterDrop = [];
+	var noDrop = true;
   
-  arr.forEach(function(index){
-    afterDrop.push(index);
-    if(noDrop)
-      if(afterDrop.filter(func).length == 1)
-        noDrop = false;
-      else
-        afterDrop.shift();
-  });
-  return afterDrop;
+	arr.forEach(function(index) {
+		afterDrop.push(index);
+		
+		if(noDrop) {
+			if(afterDrop.filter(func).length == 1) {
+				noDrop = false;
+			} else {
+				afterDrop.shift();
+			}
+		}
+	});
+  
+	return afterDrop;
 }
 
 /* =============================================================================

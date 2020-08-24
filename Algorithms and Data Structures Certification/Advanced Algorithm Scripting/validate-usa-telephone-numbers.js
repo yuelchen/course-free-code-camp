@@ -8,12 +8,14 @@
  */
  
 function telephoneCheck(str) {
-  var parentheses = /^[1]?\([0-9]{3}\)[-]?[0-9]{3}[-]?[0-9]{4}$/;
-  var noparentheses = /^[1]?[0-9]{3}[-]?[0-9]{3}[-]?[0-9]{4}$/;
-  if(parentheses.test(str.replace(/\s/g, "")) || noparentheses.test(str.replace(/\s/g, "")))
-    return true;
-  else 
-    return false;
+	var parentheses = /^[1]?\([0-9]{3}\)[-]?[0-9]{3}[-]?[0-9]{4}$/;
+	var noparentheses = /^[1]?[0-9]{3}[-]?[0-9]{3}[-]?[0-9]{4}$/;
+	
+	if(parentheses.test(str.replace(/\s/g, "")) || noparentheses.test(str.replace(/\s/g, ""))) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 /* =============================================================================

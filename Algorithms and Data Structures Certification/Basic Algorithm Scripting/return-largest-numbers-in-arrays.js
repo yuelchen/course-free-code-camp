@@ -8,10 +8,12 @@
  */
  
 function largestOfFour(arr) {
-  var largestFour = [];
-  for(i=0;i<arr.length;i++)
-    largestFour.push(arr[i].reduce(function(x,y){ return x > y ? x : y; }));
-  return largestFour;
+	var largestFour = [];
+	for(i=0;i<arr.length;i++) {
+		largestFour.push(arr[i].reduce(function(x,y){ return x > y ? x : y; }));
+	}
+	
+	return largestFour;
 }
 
 /* =============================================================================

@@ -1,11 +1,11 @@
 /* Mission:
  * Fill in the object constructor with the following methods below:
- * getFirstName()
- * getLastName()
- * getFullName()
- * setFirstName(first)
- * setLastName(last)
- * setFullName(firstAndLast)
+ * - getFirstName()
+ * - getLastName()
+ * - getFullName()
+ * - setFirstName(first)
+ * - setLastName(last)
+ * - setFullName(firstAndLast)
  *
  * The methods that take an argument must accept only one argument and it has to be a string.
  * These methods must be the only available means of interacting with the object.
@@ -15,29 +15,46 @@
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model
  */
 
+/* Person object definition; takes in a single argument when created. 
+ * 
+ * firstAndLast - a string value representing a persons name. 
+ */
 var Person = function(firstAndLast) {
-  var name = firstAndLast.split(" ");
+	//splits the persons name by space delimiter
+	var name = firstAndLast.split(" ");
     
-  this.getFirstName = function(){
-    return name[0];
-  };
-  this.getLastName = function(){
-    return name[name.length-1];
-  };
-  this.getFullName = function(){
-    return name[0] + " " + name[name.length-1];
-  };
-  this.setFirstName = function(first){
-    name[0] = first;
-  };
-  this.setLastName = function(last){
-    name[name.length-1] = last;
-  };
-  this.setFullName = function(firstAndLast){
-    name = firstAndLast.split(" ");
-  };
+	//retrieves the persons first name
+	this.getFirstName = function(){
+		return name[0];
+	};
+	
+	//retrieves the persons last name
+	this.getLastName = function(){
+		return name[name.length-1];
+	};
+	
+	//retrieves the full name (first and last)
+	this.getFullName = function(){
+		return name[0] + " " + name[name.length-1];
+	};
+	
+	//sets the persons first name
+	this.setFirstName = function(first){
+		name[0] = first;
+	};
+	
+	//sets the persons last name
+	this.setLastName = function(last){
+		name[name.length-1] = last;
+	};
+	
+	//sets the full name (first and last)
+	this.setFullName = function(firstAndLast){
+		name = firstAndLast.split(" ");
+	};
 };
 
+// Initializes a variable named bob with Person object.
 var bob = new Person('Bob Ross');
 
 /* =============================================================================

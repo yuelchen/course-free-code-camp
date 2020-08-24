@@ -13,37 +13,42 @@
 var primePow = [];
 var primes = [];
 
-function divideByPrimes(num){
-  var flag = true;
-  primes.forEach(function(index){
-    if(num % index == 0)
-      flag = false;
-  });
-  return flag;
+function divideByPrimes(num) {
+	var flag = true;
+	primes.forEach(function(index) {
+		if(num % index == 0) {
+			flag = false;
+		}
+	});
+	
+	return flag;
 }
 
-function sum(){
-  var total = 0;
-  primes.forEach(function(index){
-    total += index;
-  });
-  return total;
+function sum() {
+	var total = 0;
+	primes.forEach(function(index) {
+		total += index;
+	});
+	
+	return total;
 }
 
-function sumPrimes(num){
-  if(num == 1){
-    primes.push(num);
-  }
-  else{
-    for(i=2;i<=num;i++){
-      if(((i == 2) || (i % 2 != 0)) && ((i == 3) || (i % 3 != 0)) && ((i == 5) || (i % 5 != 0)) && !(primePow.includes(i)) && (divideByPrimes(i))){
-        if(Math.pow(i,2) <= num)
-          primePow.push(Math.pow(i, 2));
-        primes.push(i);
-      }
-    }
-  }
-  return sum();
+function sumPrimes(num) {
+	if(num == 1) {
+		primes.push(num);
+	} else {
+		for(i=2;i<=num;i++) {
+			if(((i == 2) || (i % 2 != 0)) && ((i == 3) || (i % 3 != 0)) && ((i == 5) || (i % 5 != 0)) && !(primePow.includes(i)) && (divideByPrimes(i))) {
+				if(Math.pow(i,2) <= num) {
+					primePow.push(Math.pow(i, 2));
+				}
+				
+				primes.push(i);
+			}
+		}
+	}
+	
+	return sum();
 }
 
 /* =============================================================================

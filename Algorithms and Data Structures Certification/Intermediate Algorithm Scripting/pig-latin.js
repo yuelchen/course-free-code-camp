@@ -16,16 +16,19 @@
 
 var vowels = ["a", "e", "i", "o", "u"];
 
-function translatePigLatin(str){
-  if(vowels.indexOf(str.charAt(0)) == -1){
-    var index = 0;
-    while(vowels.indexOf(str.charAt(index)) == -1)
-      index++;
-    str = str.substring(index) + str.substring(0,index) + "ay";
-  }
-  else
-    str+="way";
-  return str;
+function translatePigLatin(str) {
+	if(vowels.indexOf(str.charAt(0)) == -1) {
+		var index = 0;
+		while(vowels.indexOf(str.charAt(index)) == -1) {
+			index++;
+		}
+		
+		str = str.substring(index) + str.substring(0,index) + "ay";
+	} else {
+		str+="way";
+	}
+	
+	return str;
 }
 
 /* =============================================================================

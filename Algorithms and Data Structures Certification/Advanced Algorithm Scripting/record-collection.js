@@ -24,18 +24,21 @@ var collection = {
 };
 
 function updateRecords(id, prop, value){
-  id = id.toString();
-  if(prop != "tracks" && value != "")
-    collection[id][prop] = value;
-  else if(prop == "tracks" && value != ""){
-    if(collection[id][prop])
-      collection[id][prop].push(value);
-    else
-      collection[id][prop] = [value];
-  }
-  else if(value == "")
-    delete collection[id][prop];
-  return collection;
+	id = id.toString();
+	if(prop != "tracks" && value != "") {
+		collection[id][prop] = value;
+	} else if(prop == "tracks" && value != "") {
+		if(collection[id][prop]) {
+			collection[id][prop].push(value);
+		} else {
+			collection[id][prop] = [value];
+		}
+	}
+	else if(value == "") {
+		delete collection[id][prop];
+	}
+	
+	return collection;
 }
 
 /* =============================================================================

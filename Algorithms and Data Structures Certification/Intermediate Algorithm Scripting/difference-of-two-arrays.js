@@ -11,14 +11,16 @@
  */
 
 function diffArray(arr1, arr2) {
-  var newArr = [];
-  var concated = arr1.concat(arr2);
+	var newArr = [];
+	var concated = arr1.concat(arr2);
   
-  for(i=0;i<concated.length;i++){
-    if((concated.indexOf(concated[i]) == i) && (concated.indexOf(concated[i], i+1) == -1))
-    	newArr.push(concated[i]);
-  }
-  return newArr;
+	for(i=0;i<concated.length;i++) {
+		if((concated.indexOf(concated[i]) == i) && (concated.indexOf(concated[i], i+1) == -1)) {
+			newArr.push(concated[i]);
+		}
+	}
+	
+	return newArr;
 }
 
 /* =============================================================================

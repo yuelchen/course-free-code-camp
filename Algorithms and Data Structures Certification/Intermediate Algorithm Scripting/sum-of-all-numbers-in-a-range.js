@@ -9,11 +9,12 @@
  */
 
 function sumAll(arr) {
-  var sum = 0;
-  for(i=Math.min.apply(null, arr);i<=Math.max.apply(null, arr);i++){
-    sum += i;
-  }
-  return sum;
+	var sum = 0;
+	for(i=Math.min.apply(null, arr);i<=Math.max.apply(null, arr);i++) {
+		sum += i;
+	}
+	
+	return sum;
 }
 
 /* =============================================================================

@@ -8,19 +8,23 @@
  */
 
 function pairwise(arr, arg) {
-  if(arr.length == 0)
-    return 0;
-  else{
-    var used = [];
-    var sum = 0;
-    for(i=0;i<arr.length;i++)
-      for(j=0;j<arr.length;j++)
-        if((arr[i] + arr[j]) == arg && used.indexOf(i) == -1 && used.indexOf(j) == -1 && i != j){
-          used.push(i); used.push(j);
-          sum += i + j;
-        }
-    return sum;
-  }
+	if(arr.length == 0) {
+		return 0;
+		
+	} else {
+		var used = [];
+		var sum = 0;
+		for(i=0;i<arr.length;i++) {
+			for(j=0;j<arr.length;j++) {
+				if((arr[i] + arr[j]) == arg && used.indexOf(i) == -1 && used.indexOf(j) == -1 && i != j){
+					used.push(i); used.push(j);
+					sum += i + j;
+				}
+			}
+		}
+		
+		return sum;
+	}
 }
 
 /* =============================================================================

@@ -8,29 +8,31 @@
  */
 
  function convertHTML(str) {
-   var html = "";
-   for(i=0;i<str.length;i++){
-     switch(str.charAt(i)){
-       case "&":
-         html += "&amp;";
-         break;
-       case "<":
-         html += "&lt;";
-         break;
-       case ">":
-         html += "&gt;";
-         break;
-       case "\"":
-         html += "&quot;";
-         break;
-       case "\'":
-         html += "&apos;";
-         break;
-       default:
-         html += str.charAt(i);
-     }
-   }
-   return html;
+	var html = "";
+	
+	for(i=0;i<str.length;i++) {
+		switch(str.charAt(i)) {
+			case "&":
+				html += "&amp;";
+				break;
+			case "<":
+				html += "&lt;";
+				break;
+			case ">":
+				html += "&gt;";
+				break;
+			case "\"":
+				html += "&quot;";
+				break;
+			case "\'":
+				html += "&apos;";
+				break;
+			default:
+				html += str.charAt(i);
+		}
+	}
+   
+	return html;
 }
 
 /* =============================================================================
