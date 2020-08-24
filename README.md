@@ -1,7 +1,7 @@
 # course-free-code-camp
 This repository is for storing solved FreeCodeCamp challenges in JavaScript and WebDesign. 
 
-🌐 GitHub Page (featured Webpage): 
+🌐 GitHub Page (featured Webpage): https://yuelchen.github.io/course-free-code-camp/
 
 ---
 📋 TODO List:
