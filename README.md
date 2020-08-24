@@ -32,5 +32,5 @@ This repository is for storing solved FreeCodeCamp challenges in JavaScript and 
 - [Wikipedia Viewer](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Wikipedia%20Viewer): 
 *Filters Wikipedia search results using API*
 
-
+---
 :information_source: Try it out yourself @https://www.freecodecamp.org/
