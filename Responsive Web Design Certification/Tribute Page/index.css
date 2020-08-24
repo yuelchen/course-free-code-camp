@@ -1,0 +1,143 @@
+:root{
+  --text-color:#282828;
+  --trans-bg-black:rgba(0,0,0,0.6);
+  --trans-bg-white:rgba(255,255,255,0.8);
+}
+
+html, body{
+  z-index:0;
+  margin:0px;
+}
+
+body{
+  background:url(./static/img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;  
+}
+
+a{
+  text-decoration:none;
+  color:black;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+#main{
+  z-index:1;
+  width:100%;
+  height:100%;
+}
+
+#title{
+  width:90%;
+  height:110px;
+  padding:5px 0px; 
+  margin:10px auto;
+  text-align:center;
+  background-color:var(--trans-bg-white);
+}
+
+#title p{
+  font-size:18px;
+  font-style:italic;
+  cursor:default;
+}
+
+#body{
+  width:90%;
+  height:auto;
+  padding:5px 0px; 
+  margin:10px auto;
+  position:relative;
+}
+
+#img-div{
+  top:140px;
+  left:5%;
+  width:45%;
+  max-height:80%;
+  margin:0px;
+  text-align:center;
+  background-color:var(--trans-bg-black);
+  position:fixed;
+}
+
+#image{
+  display:block;
+  max-width:80%;
+  max-height:80%;
+  padding:5% 0;
+  margin:0px auto;
+  border-radius:50%;
+  position:relative;
+}
+
+#img-caption{
+  margin-top:-10px;
+  padding:0px;
+  color:white;
+  font-style:italic;
+  position:relative;
+  cursor:default;
+}
+
+#tribute-info{
+  top:0px;
+  right:0px;
+  width:50%;
+  height:auto;
+  position:absolute;
+}
+
+.timeline{
+  z-index:2;
+  width:90%;
+  height:auto;
+  margin:0px auto;
+  margin-bottom:10px;
+  font-weight:100px;
+  font-family:'Lato', sans-serif;
+  background-color:var(--trans-bg-black);
+  position:relative;
+  cursor:default;
+}
+
+.timeline:hover .timeline-heading{
+  border-bottom:1px dashed var(--trans-bg-white);
+}
+
+.timeline-heading{
+  color:white;
+  font-size:20px;
+  margin:0px;
+  padding:5px 10px;
+  border:1px solid var(--trans-bg-white);
+}
+
+.timeline:hover .timeline-details{
+  padding-left:75px;
+  border-top:1px dashed var(--trans-bg-white);
+  display:block;
+}
+
+.timeline-details{
+  color:white;
+  font-size:18px;
+  margin:0px;
+  padding:5px 10px;
+  border:1px solid var(--trans-bg-white);
+  display:none;
+}
+
+.external{
+  color:white;
+  text-decoration:underline;
+}
+
+.external:hover{
+  font-style:italic;
+}
