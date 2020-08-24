@@ -1,10 +1,13 @@
 # course-free-code-camp
 This repository is for storing solved FreeCodeCamp challenges in JavaScript and WebDesign. 
+
 🌐 GitHub Page (featured Webpage): 
 
+---
 📋 TODO List:
 - *Detail commenting to explain reasoning and logic of code and elements*.
 
+---
 📂 Directory Structure Shortcuts:
 - [Local Weather](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Local%20Weather): 
 *Uses geolocation to get weather information*
