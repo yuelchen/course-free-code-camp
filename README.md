@@ -5,10 +5,6 @@ This repository is collection of solved FreeCodeCamp challenges in JavaScript an
 - Click [here](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Tomato%20Timepiece) to navigate to source code.
 
 ---
-📋 TODO List:
-- *Detail commenting to explain reasoning and logic of code and elements*.
-
----
 📂 Directory Structure Shortcuts (Web Design):
 - [Local Weather](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Local%20Weather): 
 *Uses geolocation to get weather information*
@@ -32,6 +28,7 @@ This repository is collection of solved FreeCodeCamp challenges in JavaScript an
 *Retrieved static content and applies filter display from Twitch API response*
 - [Wikipedia Viewer](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Wikipedia%20Viewer): 
 *Filters Wikipedia search results using API*
+
 
 📂 Directory Structure Shortcuts (JavaScript Algorithms and Data Structures):
 - [Basic Algorithm Scripting](https://github.com/yuelchen/course-free-code-camp/tree/master/Algorithms%20and%20Data%20Structures%20Certification/Basic%20Algorithm%20Scripting)
