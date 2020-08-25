@@ -1,14 +1,15 @@
 # course-free-code-camp
-This repository is for storing solved FreeCodeCamp challenges in JavaScript and WebDesign. 
+This repository is collection of solved FreeCodeCamp challenges in JavaScript and Web Design. 
 
-🌐 GitHub Page (featured Webpage): https://yuelchen.github.io/course-free-code-camp/
+🌐 GitHub Page for featured webpage (Tomato Timepiece): https://yuelchen.github.io/course-free-code-camp/
+- Click [here](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Tomato%20Timepiece) to navigate to source code.
 
 ---
 📋 TODO List:
 - *Detail commenting to explain reasoning and logic of code and elements*.
 
 ---
-📂 Directory Structure Shortcuts:
+📂 Directory Structure Shortcuts (Web Design):
 - [Local Weather](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Local%20Weather): 
 *Uses geolocation to get weather information*
 - [Personal Portfolio](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Personal%20Portfolio): 
@@ -31,6 +32,11 @@ This repository is for storing solved FreeCodeCamp challenges in JavaScript and 
 *Retrieved static content and applies filter display from Twitch API response*
 - [Wikipedia Viewer](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Wikipedia%20Viewer): 
 *Filters Wikipedia search results using API*
+
+📂 Directory Structure Shortcuts (JavaScript Algorithms and Data Structures):
+- [Basic Algorithm Scripting](https://github.com/yuelchen/course-free-code-camp/tree/master/Algorithms%20and%20Data%20Structures%20Certification/Basic%20Algorithm%20Scripting)
+- [Intermediate Algorithm Scripting](https://github.com/yuelchen/course-free-code-camp/tree/master/Algorithms%20and%20Data%20Structures%20Certification/Intermediate%20Algorithm%20Scripting)
+- [Advanced Algorithm Scripting](https://github.com/yuelchen/course-free-code-camp/tree/master/Algorithms%20and%20Data%20Structures%20Certification/Advanced%20Algorithm%20Scripting)
 
 ---
 :information_source: Try it out yourself @https://www.freecodecamp.org/
