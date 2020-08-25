@@ -30,7 +30,7 @@ This repository is collection of solved FreeCodeCamp challenges in JavaScript an
 *Filters Wikipedia search results using API*
 
 
-📂 Directory Structure Shortcuts (JavaScript Algorithms and Data Structures):
+📂 Directory Structure Shortcuts (Algorithms and Data Structures):
 - [Basic Algorithm Scripting](https://github.com/yuelchen/course-free-code-camp/tree/master/Algorithms%20and%20Data%20Structures%20Certification/Basic%20Algorithm%20Scripting)
 - [Intermediate Algorithm Scripting](https://github.com/yuelchen/course-free-code-camp/tree/master/Algorithms%20and%20Data%20Structures%20Certification/Intermediate%20Algorithm%20Scripting)
 - [Advanced Algorithm Scripting](https://github.com/yuelchen/course-free-code-camp/tree/master/Algorithms%20and%20Data%20Structures%20Certification/Advanced%20Algorithm%20Scripting)
