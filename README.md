@@ -5,7 +5,7 @@ This repository is collection of solved FreeCodeCamp challenges in JavaScript an
 - Click [here](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Tomato%20Timepiece) to navigate to source code.
 
 ### 👋 Hello 👋
-If you found this work to be helpful, consider supporting me by buying me a [☕ ko-fi](https://ko-fi.com/yuelchen) :)
+If you found this work to be helpful and would like support me, please consider buying a [☕ ko-fi](https://ko-fi.com/yuelchen) :)
 
 ---
 📂 Directory Structure Shortcuts (Web Design):
