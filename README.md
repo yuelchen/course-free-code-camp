@@ -36,4 +36,4 @@ A repository containing completed projects from FreeCodeCamp challenges in their
 - [Advanced Algorithm Scripting](https://github.com/yuelchen/course-free-code-camp/tree/master/Algorithms%20and%20Data%20Structures%20Certification/Advanced%20Algorithm%20Scripting)
 
 ---
-:information_source: Try it out yourself @https://www.freecodecamp.org/
+:information_source: Try it out yourself [@FreeCodeCamp](https://www.freecodecamp.org/).
