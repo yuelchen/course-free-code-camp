@@ -1,5 +1,5 @@
 # course-free-code-camp
-This repository is collection of solved FreeCodeCamp challenges in JavaScript and Web Design. 
+A repository containing completed projects from FreeCodeCamp challenges in their JavaScript, Web Design, Algorithms, and Data Structure course.
 
 🌐 GitHub Page for featured webpage (Tomato Timepiece): https://yuelchen.github.io/course-free-code-camp/
 - Click [here](https://github.com/yuelchen/course-free-code-camp/tree/master/Responsive%20Web%20Design%20Certification/Tomato%20Timepiece) to navigate to source code.
